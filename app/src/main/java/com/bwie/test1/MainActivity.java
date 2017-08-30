@@ -60,10 +60,10 @@ public class MainActivity extends AppCompatActivity {
 
                     list.add(new BeanMsg(title,author_name,date,thumbnail_pic_s));
 
-                    System.out.println("=========================="+thumbnail_pic_s);
+                    /*System.out.println("=========================="+thumbnail_pic_s);
                     System.out.println("=========================="+title);
                     System.out.println("=========================="+author_name);
-                    System.out.println("=========================="+date);
+                    System.out.println("=========================="+date);*/
                 }
 
             }
@@ -88,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //适配器
     class MyAdapter extends BaseAdapter{
 
         @Override
@@ -153,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
             }else{
+                //赋值
                 switch (type){
                     case a:
                         h1 = (ViewHolder1) view.getTag();
@@ -174,6 +176,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             }
+            //展示
             return view;
         }
     }
